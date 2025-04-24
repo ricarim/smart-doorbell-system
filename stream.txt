@@ -1,0 +1,4 @@
+1- Ter Docker do homeassistant (ver config.yaml)
+2- instalar binario do mediamtx e por a rodar como serviço (https://github.com/bluenviron/mediamtx?tab=readme-ov-file#raspberry-pi-cameras)
+3- adicionar rtsp link no homeassistant
+
