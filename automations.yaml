@@ -1,0 +1,16 @@
+- alias: "Turn On Stream when Button is Activated"
+  trigger:
+    - platform: state
+      entity_id: input_boolean.stream_control
+      to: "on"
+  action:
+    - service: shell_command.start_stream
+
+- alias: "Turn Off Stream when Button is Deactivated"
+  trigger:
+    - platform: state
+      entity_id: input_boolean.stream_control
+      to: "off"
+  action:
+    - service: shell_command.stop_stream
+

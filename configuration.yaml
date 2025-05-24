@@ -1,0 +1,3 @@
+shell_command:
+  start_stream: 'ssh -i /config/.ssh/id_ed25519 -o StrictHostKeyChecking=no group7@localhost /home/group7/Desktop/camera/start_stream.sh'
+  stop_stream: 'ssh -i /config/.ssh/id_ed25519 -o StrictHostKeyChecking=no group7@localhost sudo systemctl stop mediamtx'

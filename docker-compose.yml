@@ -1,0 +1,29 @@
+services:
+  homeassistant:
+    container_name: homeassistant
+    image: "homeassistant/home-assistant:stable"
+    volumes:
+      - homeassistant_config:/config
+      - /etc/localtime:/etc/localtime:ro
+      - /home/group7/ha_media:/media
+    environment:
+      - TZ=Europe/Lisbon
+    restart: unless-stopped
+    network_mode: host
+
+volumes:
+  homeassistant_config:services:
+  homeassistant:
+    container_name: homeassistant
+    image: "homeassistant/home-assistant:stable"
+    volumes:
+      - homeassistant_config:/config
+      - /etc/localtime:/etc/localtime:ro
+      - /home/group7/ha_media:/media
+    environment:
+      - TZ=Europe/Lisbon
+    restart: unless-stopped
+    network_mode: host
+
+volumes:
+  homeassistant_config:
